@@ -36,7 +36,7 @@ export default function Sidebar({ isMenuOpen, activeMenu, setActiveMenu }: Sideb
               className={`w-full flex items-center justify-between p-3 rounded-lg transition-colors duration-200
                 ${activeMenu === item.title 
                   ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                  : 'text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800'}`}
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'}`}
             >
               <div className="flex items-center gap-3">
                 {item.icon}
@@ -53,7 +53,7 @@ export default function Sidebar({ isMenuOpen, activeMenu, setActiveMenu }: Sideb
                   <a
                     key={subIndex}
                     href="#"
-                    className="block p-2 pl-8 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-blue-50 dark:hover:bg-gray-800 text-sm"
+                    className="block p-2 pl-8 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm"
                   >
                     {subItem}
                   </a>

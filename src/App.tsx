@@ -8,6 +8,7 @@ import { AuthProvider } from './context/AuthContext';
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   return (
     <ThemeProvider>
@@ -16,6 +17,8 @@ export default function App() {
           <Header 
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
+            isUserMenuOpen={isUserMenuOpen}
+            setIsUserMenuOpen={setIsUserMenuOpen}
           />
           <Sidebar 
             isMenuOpen={isMenuOpen}
